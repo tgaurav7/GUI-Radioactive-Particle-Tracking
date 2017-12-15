@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Icons/images (11).jpg</file>
+        <file>Icons/images (17).jpg</file>
+        <file>Icons/images (25).jpg</file>
+        <file>Icons/images.jpg</file>
+        <file>Icons/InstVelocity.ico</file>
+        <file>Icons/r.jpg</file>
+        <file>Icons/theta min.png</file>
+        <file>Icons/theta.jpg</file>
+        <file>Icons/rmin.png</file>
+        <file>Icons/velocity.jpg</file>
+        <file>Icons/vr.png</file>
+        <file>Icons/vtheta.jpg</file>
+        <file>Icons/vtheta.png</file>
+        <file>Icons/vz.png</file>
+        <file>Icons/z.jpg</file>
+        <file>Icons/zmin.png</file>
+    </qresource>
+</RCC>

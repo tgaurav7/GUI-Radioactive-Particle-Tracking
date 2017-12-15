@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>InstVelocity</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/Lipika/Pictures/Icons/New folder/images (4).jpg</normaloff>C:/Users/Lipika/Pictures/Icons/New folder/images (4).jpg</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>50</height>
+   </size>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculate Instantaneous Velocity</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>361</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser1">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>100</y>
+      <width>341</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>576</x>
+      <y>10</y>
+      <width>141</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string>rMIN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="text">
+        <string>theta MIN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="text">
+        <string>Z MIN</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>141</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>R velocity</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>Theta Velocity</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string>z velocity</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>331</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="text">
+        <string>r Position</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="text">
+        <string>theta </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="text">
+        <string>z Position</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>730</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuPostion_Files">
+    <property name="title">
+     <string>Input Files</string>
+    </property>
+    <addaction name="actionR_Position"/>
+    <addaction name="actionTheta"/>
+    <addaction name="actionZ_Position"/>
+   </widget>
+   <widget class="QMenu" name="menuOutput_Files">
+    <property name="title">
+     <string>Output Files</string>
+    </property>
+    <addaction name="actionTheta_InstVelocity"/>
+    <addaction name="actionZ_InstVelocity"/>
+    <addaction name="actionR_MINIMUM"/>
+    <addaction name="actionTheta_MINIMUM"/>
+    <addaction name="actionZ_MINIMUM"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPostion_Files"/>
+   <addaction name="menuOutput_Files"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionR_Position"/>
+   <addaction name="actionTheta"/>
+   <addaction name="actionZ_Position"/>
+   <addaction name="separator"/>
+   <addaction name="actionR_InstVelocity"/>
+   <addaction name="actionTheta_InstVelocity"/>
+   <addaction name="actionZ_InstVelocity"/>
+   <addaction name="actionR_MINIMUM"/>
+   <addaction name="actionTheta_MINIMUM"/>
+   <addaction name="actionZ_MINIMUM"/>
+  </widget>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/images (17).jpg</normaloff>C:/Users/Lipika/Pictures/Icons/images (17).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionR_Position">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/r.jpg</normaloff>C:/Users/Lipika/Pictures/Icons/r.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>r Position</string>
+   </property>
+  </action>
+  <action name="actionTheta">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/theta.jpg</normaloff>C:/Users/Lipika/Pictures/Icons/theta.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Theta</string>
+   </property>
+  </action>
+  <action name="actionZ_Position">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/z.jpg</normaloff>C:/Users/Lipika/Pictures/Icons/z.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>z Position</string>
+   </property>
+  </action>
+  <action name="actionR_InstVelocity">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/vr.png</normaloff>C:/Users/Lipika/Pictures/Icons/vr.png</iconset>
+   </property>
+   <property name="text">
+    <string>r InstVelocity</string>
+   </property>
+  </action>
+  <action name="actionTheta_InstVelocity">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/vtheta.png</normaloff>C:/Users/Lipika/Pictures/Icons/vtheta.png</iconset>
+   </property>
+   <property name="text">
+    <string>theta InstVelocity</string>
+   </property>
+  </action>
+  <action name="actionZ_InstVelocity">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/vz.png</normaloff>C:/Users/Lipika/Pictures/Icons/vz.png</iconset>
+   </property>
+   <property name="text">
+    <string>z InstVelocity</string>
+   </property>
+  </action>
+  <action name="actionR_MINIMUM">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/rmin.png</normaloff>C:/Users/Lipika/Pictures/Icons/rmin.png</iconset>
+   </property>
+   <property name="text">
+    <string>r  MINIMUM</string>
+   </property>
+   <property name="toolTip">
+    <string>r  MINIMUM</string>
+   </property>
+  </action>
+  <action name="actionTheta_MINIMUM">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/theta min.png</normaloff>C:/Users/Lipika/Pictures/Icons/theta min.png</iconset>
+   </property>
+   <property name="text">
+    <string>theta MINIMUM</string>
+   </property>
+  </action>
+  <action name="actionZ_MINIMUM">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Lipika/Pictures/Icons/zmin.png</normaloff>C:/Users/Lipika/Pictures/Icons/zmin.png</iconset>
+   </property>
+   <property name="text">
+    <string>z MINIMUM</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
